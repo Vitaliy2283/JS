@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Assignment: Async and Middleware using Express</title>
+    <!--  adding external stylesheet   -->
+    <link rel="stylesheet" href="App.css">
+    <script src="random.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+    <!-- App header -->
+        <h1>Random Person Statistics Generator</h1>
+    </header>
+    
+    <!-- Main area with a paragraph -->
+    <main>
+        <p>This web app works with <a href="https://randomuser.me/"> Random User Generator web service </a>
+            and displays data from the response from this web service in the browser, maintains and prints statistics.</p>
+
+    
+            <!-- Buttons to the main area for the user to execute the two different ways to call the API. -->
+        <div class="btn">
+            <p>Choose the button to execute the functions:</p>
+            <button id="callBrowser" value="call 1">Direct Link call</button>
+            <button id="callServer" value="Call 2">Express Link call</button>
+        </div>
+    
+        <!-- Division tag to the main area to render the random data  and table to display output -->
+        <div id="rd">
+            <h3>Generated radom data:</h3>
+            <table id="table">
+                <thead> 
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="data" class="dt">
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+    <!-- Footer with paragraph that provides a copyright statement. -->
+    <footer> 
+        <p>&copy; 2022 Vitaliy Tsupriyan</p>
+    </footer>
+
+</body>
+
+</html>
